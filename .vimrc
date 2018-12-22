@@ -115,7 +115,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | exe 'NERDTree' | winc
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 "Python Version for YouCompleteMe
-let g:ycm_server_python_interpreter='/usr/bin/python2'
+let g:ycm_server_python_interpreter='/usr/bin/python3'
 "YouCompleteMe kyemappings
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
